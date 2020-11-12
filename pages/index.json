@@ -1,0 +1,24 @@
+{
+    "hero": {
+        "greeting": "Welcome to my Portofolio webpage!",
+        "intro": "My name is Luis Ojeda. I am a Software Developer graduated with honors from SAIT. I am currently located on Calgary. I am very exicted to start working with you.",
+        "image_profile": "https://lh3.googleusercontent.com/6gRwjLXSP8afN8Sv2m0mX1Ui-25vQeZ3uU7lCSWpMkWQfdQIcDBUcM_Wfxsubxv4rIDZGImQOb5ee3RzDnxSmbmlzXzHurycKqBZ1Mg",
+        "image_background": "https://lh3.googleusercontent.com/uOmb-dTA-JAFgsc7uRtJ_66sqi4rmV0dU2Kp3ockvukxy_aQGkEE9ok_b8dSIwlnasvo5HuLZIiUlRh6Tq3tzATxC960hrwlEiWJtQ"
+    },
+    "projects": {
+        "header": "Projects",
+        "description": "Here you can take a look at some of my most recent projects."
+    },
+    "languages": [
+        {"name":"Java"},
+        {"name":"Javascript"},
+        {"name":"PHP"},
+        {"name":"Python"},
+        {"name":"C#"},
+        {"name":"CSS"}
+    ],
+    "frameworks": [
+        {"name": "React"},
+        {"name": "Bootstrap"}
+    ]
+}

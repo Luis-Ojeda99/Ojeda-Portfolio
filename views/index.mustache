@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>{{global.site_name}}</title>
+    <meta name="description" content="" />
+
+    {{>head}}
+</head>
+
+<body>
+    <div class="blocks-page">
+        {{>header2}}
+        
+        <section style="background:url('{{{page.hero.image_background}}}=s2048');background-size:cover;background-position:center;">
+            <div class="gradient-div py-3" style="height:76vh">
+        
+                <div class="container">
+                    <div class="row justify-content-center header-row">
+                        <div class="col-12 col-md-8 col-lg-7 text-center text-white">
+                            <img class="mt-3" style="width:220px; border-radius:50%;" src="{{{page.hero.image_profile}}}=s220-c" />
+                            <h1 class="display-3 mt-1">{{page.hero.greeting}}</h1>
+                            <p class="lead text-white mb-4 mt-3">
+                               {{page.hero.intro}}
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-5 py-md-7">
+            <div class="container py-md-5">
+                <div class="row block-header">
+                    <div class="col-sm-8 mx-auto text-center">
+                        <h1 class="display-4 mt-2">{{page.projects.header}}</h1>
+                        <hr>
+                        <p class="lead">{{page.projects.description}}</p>
+                    </div>
+                </div>
+        
+                <div class="row mt-5 aos-init aos-animate" data-aos="fade-up" data-aos-duration="1000">
+                    {{#projects}}
+                    <div class="col-md-4 col-sm-12 mb-2r">
+                        <a href="/project/{{slug}}">
+                            <div class="position-relative project">
+                                <div class="image position-relative ">
+                                    <img src="{{{image}}}" class="img-fluid w-100 d-block">
+                                    <div class="overlay-box">
+                                        <div class="overlay-inner overlay-content">
+                                            <h5 class="mb-0">{{name}}</h5>
+                                            <p>{{category}}</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    {{/projects}}
+                </div>
+            </div>
+        </section>
+        {{>footer}}
+    </div>
+
+    {{>scripts}}
+</body>
+</html>
